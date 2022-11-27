@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
+import Logo from './Logo';
 
 function Navbar() {
 	const navRef = useRef();
@@ -11,7 +12,7 @@ function Navbar() {
 
 	return (
 		<header>
-			<h3>PROVWEB</h3>
+			<Logo />
 			<nav ref={navRef}>
 				<a href="https://ixc.provweb.com.br/central_assinante_web/login" target="blank_">Central do Assinante</a>
 				<a href="https://watch.tv.br"target="blank_">Watch Brasil</a>
